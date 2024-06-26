@@ -1,0 +1,811 @@
+{
+	"info": {
+		"_postman_id": "68da1dd5-8c16-4999-9bb4-4ecceb620db5",
+		"name": "ProcedureOnboardingSystemMTM",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10724318"
+	},
+	"item": [
+		{
+			"name": "Procedures",
+			"item": [
+				{
+					"name": "GetAll",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:1111/ProcedureOnboardingSystemMTM/Procedures",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1111",
+							"path": [
+								"ProcedureOnboardingSystemMTM",
+								"Procedures"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAllbasedonPaginationandSorting",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:1111/ProcedureOnboardingSystemMTM/Procedures/PaginationandSorting?pageNo=0&pageSize=5&sortBy=id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1111",
+							"path": [
+								"ProcedureOnboardingSystemMTM",
+								"Procedures",
+								"PaginationandSorting"
+							],
+							"query": [
+								{
+									"key": "pageNo",
+									"value": "0"
+								},
+								{
+									"key": "pageSize",
+									"value": "5"
+								},
+								{
+									"key": "sortBy",
+									"value": "id"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetbasedonID",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:1111/ProcedureOnboardingSystemMTM/Procedures/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1111",
+							"path": [
+								"ProcedureOnboardingSystemMTM",
+								"Procedures",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\"           :      \"procedures1\",\r\n    \"description\"    :      \"everything urgent\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:1111/ProcedureOnboardingSystemMTM/Procedures/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1111",
+							"path": [
+								"ProcedureOnboardingSystemMTM",
+								"Procedures",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\"           :    \"procedure1\",\r\n    \"description\"    :    \"everything urgently required\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:1111/ProcedureOnboardingSystemMTM/Procedures/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1111",
+							"path": [
+								"ProcedureOnboardingSystemMTM",
+								"Procedures",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "remove",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:1111/ProcedureOnboardingSystemMTM/Procedures/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1111",
+							"path": [
+								"ProcedureOnboardingSystemMTM",
+								"Procedures",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Documents",
+			"item": [
+				{
+					"name": "GetAll",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:1111/ProcedureOnboardingSystemMTM/Documents",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1111",
+							"path": [
+								"ProcedureOnboardingSystemMTM",
+								"Documents"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAllbasedonPaginatiionandSorting",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:1111/ProcedureOnboardingSystemMTM/Documents/PaginationandSorting?pageNo=0&pageSize=5&sortBy=id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1111",
+							"path": [
+								"ProcedureOnboardingSystemMTM",
+								"Documents",
+								"PaginationandSorting"
+							],
+							"query": [
+								{
+									"key": "pageNo",
+									"value": "0"
+								},
+								{
+									"key": "pageSize",
+									"value": "5"
+								},
+								{
+									"key": "sortBy",
+									"value": "id"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetbasedonID",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:1111/ProcedureOnboardingSystemMTM/Documents/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1111",
+							"path": [
+								"ProcedureOnboardingSystemMTM",
+								"Documents",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create1",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\"                   :           \"Documents1\",\r\n    \"type\"                   :           \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:1111/ProcedureOnboardingSystemMTM/Documents/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1111",
+							"path": [
+								"ProcedureOnboardingSystemMTM",
+								"Documents",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create2",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"procedures\"             :      {\r\n                                             \"id\"         :        1,\r\n                                             \"name\"       :       \"procedure1\",\r\n                                             \"description\":       \"everything urgently required\"\r\n                                    },\r\n    \"name\"                   :           \"Documents2\",\r\n    \"type\"                   :           \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:1111/ProcedureOnboardingSystem/Documents/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1111",
+							"path": [
+								"ProcedureOnboardingSystem",
+								"Documents",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\"                     :            1,\r\n    \"name\"                   :           \"Documents1\",\r\n    \"type\"                   :           \"type1\",\r\n     \"deficiencyChecks\"       :         [\r\n                                        {\r\n                                            \"name\"                  :           \"DeficiencyChecks1\"\r\n                                        },\r\n                                        {\r\n                                            \"name\"                  :           \"DeficiencyChecks2  \"\r\n                                        },\r\n                                        {\r\n                                            \"name\"                  :           \"DeficiencyChecks3\"\r\n                                        }\r\n                                        ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:1111/ProcedureOnboardingSystemMTM/Documents/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1111",
+							"path": [
+								"ProcedureOnboardingSystemMTM",
+								"Documents",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "remove",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:1111/ProcedureOnboardingSystem/Documents/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1111",
+							"path": [
+								"ProcedureOnboardingSystem",
+								"Documents",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "DeficiencyChecks",
+			"item": [
+				{
+					"name": "GetAll",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:1111/ProcedureOnboardingSystemMTM/DeficiencyChecks",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1111",
+							"path": [
+								"ProcedureOnboardingSystemMTM",
+								"DeficiencyChecks"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAllbasedonPaginationandSorting",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:1111/ProcedureOnboardingSystemMTM/DeficiencyChecks/PaginationandSorting?pageNo=0&pageSize=5&sortBy=id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1111",
+							"path": [
+								"ProcedureOnboardingSystemMTM",
+								"DeficiencyChecks",
+								"PaginationandSorting"
+							],
+							"query": [
+								{
+									"key": "pageNo",
+									"value": "0"
+								},
+								{
+									"key": "pageSize",
+									"value": "5"
+								},
+								{
+									"key": "sortBy",
+									"value": "id"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetbasedonID",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:1111/ProcedureOnboardingSystemMTM/DeficiencyChecks/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1111",
+							"path": [
+								"ProcedureOnboardingSystemMTM",
+								"DeficiencyChecks",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create1",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\"                  :           \"DeficiencyChecks1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:1111/ProcedureOnboardingSystemMTM/DeficiencyChecks/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1111",
+							"path": [
+								"ProcedureOnboardingSystemMTM",
+								"DeficiencyChecks",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create2",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\"                  :           \"DeficiencyChecks2\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:1111/ProcedureOnboardingSystemMTM/DeficiencyChecks/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1111",
+							"path": [
+								"ProcedureOnboardingSystemMTM",
+								"DeficiencyChecks",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create3",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\"                  :           \"DeficiencyChecks3\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:1111/ProcedureOnboardingSystemMTM/DeficiencyChecks/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1111",
+							"path": [
+								"ProcedureOnboardingSystemMTM",
+								"DeficiencyChecks",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create4",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\"                  :           \"DeficiencyChecks4\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:1111/ProcedureOnboardingSystemMTM/DeficiencyChecks/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1111",
+							"path": [
+								"ProcedureOnboardingSystemMTM",
+								"DeficiencyChecks",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create5",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\"                  :           \"DeficiencyChecks5\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:1111/ProcedureOnboardingSystemMTM/DeficiencyChecks/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1111",
+							"path": [
+								"ProcedureOnboardingSystemMTM",
+								"DeficiencyChecks",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create6",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\"                  :           \"DeficiencyChecks6\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:1111/ProcedureOnboardingSystemMTM/DeficiencyChecks/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1111",
+							"path": [
+								"ProcedureOnboardingSystemMTM",
+								"DeficiencyChecks",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\"         : \"DeficiencyChecks22\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:1111/ProcedureOnboardingSystemMTM/DeficiencyChecks/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1111",
+							"path": [
+								"ProcedureOnboardingSystemMTM",
+								"DeficiencyChecks",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "remove",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:1111/ProcedureOnboardingSystemMTM/DeficiencyChecks/6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1111",
+							"path": [
+								"ProcedureOnboardingSystemMTM",
+								"DeficiencyChecks",
+								"6"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
